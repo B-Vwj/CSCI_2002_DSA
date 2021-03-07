@@ -1,0 +1,13 @@
+Poorer Performer
+---
+
+- find_BigO()
+
+- removeAll_BigO()
+
+Better Performer
+---
+
+- get_BigO()
+
+- isEmpty_BigO()
