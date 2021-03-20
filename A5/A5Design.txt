@@ -1,0 +1,92 @@
+// Interfaces
+
+interface Stack<E>
+    boolean isEmpty()
+    void push(newElem)
+    void add(newElem) // Alias for push
+    E pop() // throws RuntimeException
+    E peek()
+    int size()
+    void clear()
+    List<E> toJavaList()
+    String toIterator()
+    // display()
+
+interface Queue<E>
+    void enqueue(newElem)
+    void add(newElem) // Alias for enqueue
+    E dequeue() // throws RuntimeException
+    E peek()
+    boolean isEmpty()
+    int size()
+    void clear()
+    List<E> toJavaList()
+    String toIterator()
+    // display()
+
+interface DeQueue<E> extends Queue<E>
+    void addFirst()
+    void removeFirst()
+    void addLast()
+    void removeLast()
+
+interface Bag<E>
+    void add()
+    E any()
+    E remove()
+    boolean contains()
+    boolean isEmpty()
+    int size()
+    void clear()
+    List<E> toJavaList()
+    String toIterator()
+    // display()
+
+// Classes
+
+class StackLL<E> implements Stack<E>
+    StackLL() // Constructor
+    E firstNode
+    E lastNode
+
+    // defined methods from interface
+
+class StackArr<E> implements Stack<E>
+    StackArr() // Constructor
+    E[] Arr
+
+    // defined methods from interface
+
+class QueueLL<E> implements Queue<E>
+    QueueLL()
+
+class QueueArr<E> implements Queue<E>
+    QueueArr<E>
+
+class DeQueueLL<E>
+    // Implements methods
+    addFirst()
+    removeFirst()
+    addLast()
+    removeLast()
+
+class DeQueueArr<E>
+    // Implements methods
+    addFirst()
+    removeFirst()
+    addLast()
+    removeLast()
+
+class BagLL<E> implements Bag<E>
+    void add()
+    E any()
+    E remove()
+    boolean contains()
+
+class BagArr<E> implements Bag<E>
+    void add()
+    E any()
+    E remove()
+    boolean contains()
+
+// Ball Park Estimate (8 classes with about 50-75 lines of code each, so roughly 400 - 600 lines of code)
